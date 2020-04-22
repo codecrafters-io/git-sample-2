@@ -3,19 +3,20 @@ import os
 import shutil
 
 random_words = [
-	"humpty",
-	"dumpty",
-	"horsey",
-	"donkey",
-	"yikes",
-	"monkey",
-	"doo",
-	"scooby",
-	"dooby",
-	"vanilla",
+    "humpty",
+    "dumpty",
+    "horsey",
+    "donkey",
+    "yikes",
+    "monkey",
+    "doo",
+    "scooby",
+    "dooby",
+    "vanilla",
 ]
 
-random.seed(2)
+random.seed(3)
+
 
 def words(count):
     def f():
@@ -29,7 +30,7 @@ def words(count):
                 yield chosen
 
     return list(f())
-    
+
 
 def create():
     for word in random_words:
@@ -50,7 +51,7 @@ def create():
                 contents = " ".join(words(random.randint(0, 10)))
                 f.write(contents)
                 f.close()
-    
+
 
 if __name__ == "__main__":
     create()
