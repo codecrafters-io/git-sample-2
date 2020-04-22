@@ -15,7 +15,7 @@ random_words = [
     "vanilla",
 ]
 
-random.seed(3)
+random.seed(2)
 
 
 def words(count):
